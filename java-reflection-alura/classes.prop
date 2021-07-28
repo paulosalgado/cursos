@@ -1,0 +1,4 @@
+java.util.List = java.util.ArrayList
+java.util.Map  = java.util.HashMap
+
+br.com.alura.reflection.dinamico.exemplo.InterfaceExemplo = br.com.alura.reflection.dinamico.exemplo.ClasseExemplo

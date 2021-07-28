@@ -1,0 +1,32 @@
+nginx: 
+  image: paulosalgado/curso-alura-nginx
+  ports: 
+    - "80:80"
+  links: 
+    - "node1"
+    - "node2"
+    - "node3"
+
+mongodb: 
+  image: mongo
+
+node1: 
+  image: paulosalgado/curso-alura-books
+  ports: 
+    - "3000"
+  links: 
+    - "mongodb"
+
+node2: 
+  image: paulosalgado/curso-alura-books
+  ports: 
+    - "3000"
+  links: 
+    - "mongodb"
+
+node3: 
+  image: paulosalgado/curso-alura-books
+  ports: 
+    - "3000"
+  links: 
+    - "mongodb"

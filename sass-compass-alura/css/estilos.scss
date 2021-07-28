@@ -1,0 +1,18 @@
+@import 'helpers/functions';
+@import 'helpers/placeholders';
+@import 'helpers/variaveis';
+
+$sprite-spacing: 5px;
+@import "sprite/*.png";
+
+$plataformas-spacing: 10px;
+@import "plataformas/*.png";
+
+@import 'layout/blog';
+@import 'layout/contato';
+@import 'layout/destaque';
+@import 'layout/footer';
+@import 'layout/geral';
+@import 'layout/header';
+@import 'layout/planos';
+@import 'layout/sobre';

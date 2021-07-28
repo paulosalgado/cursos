@@ -1,0 +1,31 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: course
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:postgresql://${postgres-url}:5432/devdojo
+    username: devdojo_usr
+    password: ${postgres-passwd}
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8082/eureka/
+    register-with-eureka: true
+
+jwt:
+  config:
+    type: signed

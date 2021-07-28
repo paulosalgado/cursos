@@ -1,0 +1,4 @@
+// Functions - Saas
+@function multiplica-pela-fonte($multiplicador) {
+    @return round($multiplicador * $tamanho-da-fonte-padrao);
+}
